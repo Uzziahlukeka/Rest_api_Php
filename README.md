@@ -43,7 +43,7 @@ there were the requirements and we tried to solve it
 
 ## for the API 
 
-for the api to work properly , the main folder must have Qwerty as name and inside this folder opern another one named : nextbid-auction-website-main where you can deploy all files and run it properly 
+for the api to work properly , the main folder must have Qwerty as name and inside this folder opern another one named : nextbid-auction-website-main where you can deploy all files and run it properly or you can modify the file directory 
 
 
 
