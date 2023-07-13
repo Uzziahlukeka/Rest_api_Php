@@ -25,7 +25,7 @@ if (isset($_POST['pay'])) {
   </head>
   <body>
     <!-- Replace "test" with your own sandbox Business account app client ID -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AW5mJS06DZBsuTHuSbXaxHcS9MQZqMdzYBBXSZkMq2FxUAYL3JUOZdnG5Pao9Troh4kAOcdbHPVWxnIj&currency=PLN"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=your id&currency=PLN"></script>
     <!-- Set up a container element for the button -->
     <div id="paypal-button-container"></div>
     <script>
