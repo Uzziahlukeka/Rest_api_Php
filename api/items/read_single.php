@@ -27,7 +27,8 @@ $post_arr=array(
     'item_name'=>$post->item_name,
     'item_photo'=>$post->item_photo ,
     'item_description'=>$post->item_description,
-    'item_price'=>$post->item_price
+    'item_price'=>$post->item_price,
+    'user_id'=>$post->user_id
 );
 
 //make json 

@@ -10,6 +10,7 @@ class Registration{
     public $passw;
     public $id;
     private $hash;
+    public $createAt;
 
     public function __construct($db)
     {
@@ -125,6 +126,7 @@ class Registration{
         $this->id=$row['id'];
         $this->name=$row['name'];
         $this->email=$row['email'];
+        $this->createAt=$row['created_at'];
     }
 
     //delete 

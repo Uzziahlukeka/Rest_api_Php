@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+$name=$_SESSION['data'];
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit('POST request method required');
@@ -43,7 +46,9 @@ $data = [
     'item_name' => filter_input(INPUT_POST, "item-name",),
     'item_photo' => $filename,
     'item_description' => filter_input(INPUT_POST, "item-description"),
-    'item_price' => filter_input(INPUT_POST, "amount", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION)
+    'item_price' => filter_input(INPUT_POST, "amount", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION),
+    'user_id'=>$name
+    
 ];
 
 $apiUrl = "http://localhost/Qwerty/nextbid-auction-website-main/api/items/create.php";

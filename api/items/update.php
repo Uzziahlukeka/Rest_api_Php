@@ -29,6 +29,7 @@ $post->item_name=$data->item_name;
 $post->item_photo=$data->item_photo;
 $post->item_description=$data->item_description;
 $post->item_price=$data->item_price;
+$post->user_id=$data->user_id;
 //update post
 
 if($post->update()){
