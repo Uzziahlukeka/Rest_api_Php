@@ -104,7 +104,7 @@ class Registration{
     public function read_single(){
         //create query
         $query='SELECT 
-        id,name,email,created_at
+        id,name,email,created_at,password
         FROM
         '. $this->table . '
         WHERE
@@ -127,6 +127,7 @@ class Registration{
         $this->name=$row['name'];
         $this->email=$row['email'];
         $this->createAt=$row['created_at'];
+        $this->passw=$row['password'];
     }
 
     //delete 

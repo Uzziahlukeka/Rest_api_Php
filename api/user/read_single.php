@@ -27,7 +27,9 @@ $post_arr=array(
     'id'=>$post->id,
     'name'=>$post->name,
     'email'=>$post->email,
-    'create_at'=>$post->createAt
+    'create_at'=>$post->createAt,
+    'password'=>$post->passw
+    
 );
 
 //make json 
